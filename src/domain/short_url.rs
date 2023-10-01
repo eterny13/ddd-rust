@@ -6,6 +6,10 @@ pub struct ShortUrl {
 }
 
 impl ShortUrl {
+  pub fn new(hashed_url_string: HashedUrlString) -> Self {
+    Self { hashed_url_string }
+  }
+
   pub fn get_hashed_url_string(self) -> HashedUrlString {
     self.hashed_url_string
   }
